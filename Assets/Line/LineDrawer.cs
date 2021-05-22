@@ -65,6 +65,8 @@ public class LineDrawer : MonoBehaviour
 				{
 					if (EventSystem.current.IsPointerOverGameObject())
 					{
+
+						Input.multiTouchEnabled = false;
 						return;
 					}
 					else
