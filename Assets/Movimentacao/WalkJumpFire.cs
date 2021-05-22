@@ -23,6 +23,7 @@ public class WalkJumpFire : MonoBehaviour
 
     public int vida;
     public Animator animator;
+    
 
 
 
@@ -115,7 +116,7 @@ public class WalkJumpFire : MonoBehaviour
         //estamina2 = LineDrawer.GetComponent<LineDrawer>().estamina;
 
     }
-
+    
     void FixedUpdate()
     {
         rb.velocity = new Vector2(dirX * moveSpeed, rb.velocity.y);

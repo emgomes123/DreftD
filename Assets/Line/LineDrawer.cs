@@ -56,7 +56,7 @@ public class LineDrawer : MonoBehaviour
 		if (Input.touchCount > 0)
 		{
 
-			Touch t = Input.GetTouch(0);
+			
 
 			if (Input.touchCount > 0 && Input.touchCount < 2)
 			{
