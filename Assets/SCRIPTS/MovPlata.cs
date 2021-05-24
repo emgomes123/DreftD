@@ -35,4 +35,5 @@ public class MovPlata : MonoBehaviour
         }
 
     }
+   
 }

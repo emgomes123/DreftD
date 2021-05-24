@@ -25,6 +25,10 @@ public class Projetil : MonoBehaviour
             Destroy(gameObject);
         }
 
+        if (Other.gameObject.CompareTag("Linha"))
+        {
+            Destroy(gameObject);
+        }
         if (Other.gameObject.CompareTag("Plataformas"))
         {
             Destroy(gameObject);

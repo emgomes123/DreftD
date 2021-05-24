@@ -16,6 +16,7 @@ public class WalkJumpFire : MonoBehaviour
     Vector3 localScale;
 
     public Transform barrel;
+   
     public Rigidbody2D bullet;
 
     public GameObject LineDrawer, vida1, vida2, vida3, vida4, vida5;
@@ -116,6 +117,8 @@ public class WalkJumpFire : MonoBehaviour
         //estamina2 = LineDrawer.GetComponent<LineDrawer>().estamina;
 
     }
+
+   
     
     void FixedUpdate()
     {
@@ -123,11 +126,11 @@ public class WalkJumpFire : MonoBehaviour
 
         if (dirX != 0)
         {
-            animator.SetBool("New Bool", true);
+            animator.SetBool("taCorrendo", true);
         }
         else
         {
-            animator.SetBool("New Bool", false);
+            animator.SetBool("taCorrendo", false);
         }
 
         
@@ -186,6 +189,30 @@ public class WalkJumpFire : MonoBehaviour
             //Destroy(gameObject);
             Debug.Log("tinta + 25");
         }
+
+
     }
+
+    public virtual void OnCollisionEnter2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Plataforma")
+        {
+            transform.parent = col.transform;
+        }
+
+        if (col.gameObject.tag == "vida")
+        {
+            Destroy(col.gameObject);
+        }
+    }
+
+    public virtual void OnCollisionExit2D(Collision2D col)
+    {
+        if (col.gameObject.tag == "Plataforma")
+        {
+            transform.parent = null;
+        }
+    }
+
 
 }
