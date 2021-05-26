@@ -4,21 +4,22 @@ using UnityEngine;
 
 public class Tinta : MonoBehaviour
 {
-    public GameObject LineDrawer;
-    public float estamina2;
+       
+    public GameObject Player;
+    public float Vida2;
 
     void Update()
     {
-        //estamina2 = LineDrawer.GetComponent<LineDrawer>().estamina;
+        Vida2 = Player.GetComponent<WalkJumpFire>().vida;
     }
 
     void OnTriggerEnter2D(Collider2D Other)
     {
         if (Other.gameObject.CompareTag("Player"))
         {
-            estamina2 = 25;
-            //Destroy(gameObject);
-            Debug.Log("tinta + 25");
+            Vida2++;
+            Destroy(gameObject);
+            Debug.Log("tvida + 25");
         }
     }
 }

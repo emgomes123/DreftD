@@ -58,9 +58,7 @@ public class LineDrawer : MonoBehaviour
 			
 
 
-			if (Input.touchCount > 0 && Input.touchCount < 2)
-			{
-
+			
 				
 
 				if (Input.GetMouseButtonDown(0) && contador <= 0)
@@ -71,17 +69,17 @@ public class LineDrawer : MonoBehaviour
 						Input.multiTouchEnabled = false;
 						return;
 					}
-
-
+                    else
+                    {
 					BeginDraw();
+				    }
+
+
+					
 					
 
 				}
-			}
-            else
-            {
-				return;
-            }
+			
 
 		}
       

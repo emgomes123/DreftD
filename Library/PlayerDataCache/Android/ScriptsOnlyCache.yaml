@@ -101,57 +101,57 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 1438}
     - Class: 114
-      Script: {instanceID: 1492}
+      Script: {instanceID: 1494}
     - Class: 114
-      Script: {instanceID: 1540}
+      Script: {instanceID: 1542}
     - Class: 114
-      Script: {instanceID: 1842}
+      Script: {instanceID: 1844}
     - Class: 114
-      Script: {instanceID: 1874}
+      Script: {instanceID: 1876}
     - Class: 114
-      Script: {instanceID: 2226}
+      Script: {instanceID: 1930}
     - Class: 114
-      Script: {instanceID: 2302}
+      Script: {instanceID: 2230}
     - Class: 114
-      Script: {instanceID: 2486}
+      Script: {instanceID: 2306}
     - Class: 114
-      Script: {instanceID: 2536}
+      Script: {instanceID: 2490}
     - Class: 114
-      Script: {instanceID: 2612}
+      Script: {instanceID: 2540}
     - Class: 114
-      Script: {instanceID: 2702}
+      Script: {instanceID: 2616}
     - Class: 114
-      Script: {instanceID: 2770}
+      Script: {instanceID: 2706}
     - Class: 114
-      Script: {instanceID: 2782}
+      Script: {instanceID: 2774}
     - Class: 114
-      Script: {instanceID: 2790}
+      Script: {instanceID: 2786}
     - Class: 114
-      Script: {instanceID: 2890}
+      Script: {instanceID: 2794}
     - Class: 114
-      Script: {instanceID: 2904}
+      Script: {instanceID: 2894}
     - Class: 114
-      Script: {instanceID: 3118}
+      Script: {instanceID: 2908}
     - Class: 114
-      Script: {instanceID: 3232}
+      Script: {instanceID: 3122}
     - Class: 114
-      Script: {instanceID: 3318}
+      Script: {instanceID: 3236}
     - Class: 114
-      Script: {instanceID: 3394}
+      Script: {instanceID: 3322}
     - Class: 114
-      Script: {instanceID: 3720}
+      Script: {instanceID: 3398}
     - Class: 114
-      Script: {instanceID: 3922}
+      Script: {instanceID: 3724}
     - Class: 114
-      Script: {instanceID: 4014}
+      Script: {instanceID: 3926}
     - Class: 114
-      Script: {instanceID: 4336}
+      Script: {instanceID: 4018}
     - Class: 114
-      Script: {instanceID: 5166}
+      Script: {instanceID: 4340}
     - Class: 114
-      Script: {instanceID: 271070}
+      Script: {instanceID: 5170}
     - Class: 114
-      Script: {instanceID: 314826}
+      Script: {instanceID: 5184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 120
@@ -319,6 +319,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.CrossPlatformInput
     className: ButtonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: a987ccc8df538f43457d57a1d4f6ecb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: movimentaVerticalPlataforma
   - hash:
       serializedVersion: 2
       Hash: 6225eb0973ab0af667bc5f9d1b1b18de
@@ -891,7 +897,7 @@ ScriptsOnlyBuild:
     className: SignalReceiver
   - hash:
       serializedVersion: 2
-      Hash: 3c7c9fdf645e302e5c9cde0b48bf8e4a
+      Hash: 48fc4c7c71c06868630f567e97425e63
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Tinta
@@ -1053,6 +1059,12 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
+      Hash: a987ccc8df538f43457d57a1d4f6ecb5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: movimentoHorizontalPlataforma
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -1093,19 +1105,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.2D.IK.Runtime.dll
     namespaceName: UnityEngine.U2D.IK
     className: FabrikSolver2D
-  - hash:
-      serializedVersion: 2
-      Hash: a987ccc8df538f43457d57a1d4f6ecb5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: movimentaVerticalPlataforma
-  - hash:
-      serializedVersion: 2
-      Hash: a987ccc8df538f43457d57a1d4f6ecb5
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: movimentoHorizontalPlataforma
   platform: 13
   scenePathNames:
   - Assets/Fases1.unity
-  playerPath: C:/Users/EdsoN/Music/2.apk
+  playerPath: C:/Users/EdsoN/Music/DraftDreams-Beta-v1.0.apk

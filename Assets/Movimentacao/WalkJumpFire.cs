@@ -53,7 +53,19 @@ public class WalkJumpFire : MonoBehaviour
        
 
         if (CrossPlatformInputManager.GetButtonDown("Jump"))
+        {
             Jump();
+            
+          
+
+        }
+        //if (CrossPlatformInputManager.GetButtonDown("Jump") == false && rb.velocity.y == 0)
+        //{
+        //    animator.SetBool("taPulando", false);
+        //}
+
+
+
 
         if (CrossPlatformInputManager.GetButtonDown("Fire1"))
             Fire();
@@ -157,7 +169,17 @@ public class WalkJumpFire : MonoBehaviour
     void Jump()
     {
         if (rb.velocity.y == 0)
+        {
             rb.AddForce(Vector2.up * jumpForce);
+            //animator.SetBool("taPulando", true);
+
+           
+
+        }
+       
+
+
+
     }
 
     void Fire()
@@ -200,10 +222,7 @@ public class WalkJumpFire : MonoBehaviour
             transform.parent = col.transform;
         }
 
-        if (col.gameObject.tag == "vida")
-        {
-            Destroy(col.gameObject);
-        }
+        
     }
 
     public virtual void OnCollisionExit2D(Collision2D col)
